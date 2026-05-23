@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" viewBox="0 0 680 920">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: sans-serif; }
+      .th  { font-size: 13px; font-weight: 600; }
+      .ts  { font-size: 11px; font-weight: 400; }
+      /* Layer fill + stroke classes */
+      .l5  { fill: #FEFAE8; stroke: #C9A71A; }
+      .l4  { fill: #FAECE7; stroke: #D85A30; }
+      .l3  { fill: #EEEDFE; stroke: #534AB7; }
+      .l2  { fill: #E6F1FB; stroke: #185FA5; }
+      .l1  { fill: #E1F5EE; stroke: #0F6E56; }
+      .node-l5 { fill: #FFF8D0; stroke: #C9A71A; }
+      .node-l4 { fill: #ffffff; stroke: #D85A30; }
+      .node-l3 { fill: #EEEDFE; stroke: #534AB7; }
+      .node-l2 { fill: #E6F1FB; stroke: #185FA5; }
+      .node-l1 { fill: #ffffff; stroke: #888780; }
+    </style>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LAYER 5 — Presentation Layer (User Interface)          -->
+  <!-- y=32  h=148  bottom=180                                -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="38" y="32" width="604" height="148" rx="12" class="l5" stroke-width="0.5"/>
+  <text class="th" x="56" y="62" fill="#5C4500">Layer 5: Presentation Layer (User Interface)</text>
+
+  <!-- Node 1: Exception Routing Dashboard -->
+  <rect x="56"  y="74" width="168" height="60" rx="8" class="node-l5" stroke-width="0.5"/>
+  <text class="th" x="140" y="97"  text-anchor="middle" fill="#5C4500">Exception Routing</text>
+  <text class="th" x="140" y="113" text-anchor="middle" fill="#5C4500">Dashboard</text>
+  <text class="ts" x="140" y="128" text-anchor="middle" fill="#7A6008">AP module</text>
+
+  <!-- Node 2: Interactive XAI Dashboard -->
+  <rect x="256" y="74" width="168" height="60" rx="8" class="node-l5" stroke-width="0.5"/>
+  <text class="th" x="340" y="97"  text-anchor="middle" fill="#5C4500">Interactive XAI</text>
+  <text class="th" x="340" y="113" text-anchor="middle" fill="#5C4500">Dashboard</text>
+  <text class="ts" x="340" y="128" text-anchor="middle" fill="#7A6008">Cash flow module</text>
+
+  <!-- Node 3: Conversational Chatbot UI -->
+  <rect x="456" y="74" width="168" height="60" rx="8" class="node-l5" stroke-width="0.5"/>
+  <text class="th" x="540" y="97"  text-anchor="middle" fill="#5C4500">Conversational</text>
+  <text class="th" x="540" y="113" text-anchor="middle" fill="#5C4500">Chatbot UI</text>
+  <text class="ts" x="540" y="128" text-anchor="middle" fill="#7A6008">Procurement module</text>
+
+  <!-- UP arrows L4 → L5 with label -->
+  <line x1="140" y1="208" x2="140" y2="182" stroke="#C9A71A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="208" x2="340" y2="182" stroke="#C9A71A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="540" y1="208" x2="540" y2="182" stroke="#C9A71A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text class="ts" x="340" y="197" text-anchor="middle" fill="#7A6008">Validated insights &amp; SHAP explanations</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LAYER 4 — Governance &amp; Security Layer              -->
+  <!-- y=210  h=220  bottom=430                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="38" y="210" width="604" height="220" rx="12" class="l4" stroke-width="0.5"/>
+  <text class="th" x="56" y="240" fill="#712B13">Layer 4: Governance &amp; Security Layer (XAI &amp; Validation)</text>
+
+  <!-- Inner grouping box -->
+  <rect x="110" y="258" width="460" height="82" rx="10" fill="none" stroke="#D85A30" stroke-width="0.5"/>
+
+  <!-- XAI Controller -->
+  <rect x="124" y="270" width="200" height="58" rx="6" class="node-l4" stroke-width="0.5"/>
+  <text class="th" x="224" y="293" text-anchor="middle" fill="#712B13">Explainable AI (XAI)</text>
+  <text class="ts" x="224" y="311" text-anchor="middle" fill="#993C1D">Controller</text>
+
+  <!-- SHAP Value Generator -->
+  <rect x="356" y="270" width="200" height="58" rx="6" class="node-l4" stroke-width="0.5"/>
+  <text class="th" x="456" y="293" text-anchor="middle" fill="#712B13">SHAP Value Generator</text>
+  <text class="ts" x="456" y="311" text-anchor="middle" fill="#993C1D">Explainability output</text>
+
+  <text class="ts" x="340" y="374" text-anchor="middle" fill="#712B13">Governed output — validated commands only</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LAYER 3 — Application Logic Layer                      -->
+  <!-- y=448  h=132  bottom=580                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="38" y="448" width="604" height="132" rx="12" class="l3" stroke-width="0.5"/>
+  <text class="th" x="56" y="478" fill="#3C3489">Layer 3: Application Logic Layer (Cognitive Processing)</text>
+
+  <!-- NLP Node -->
+  <rect x="56"  y="494" width="160" height="58" rx="8" class="node-l3" stroke-width="0.5"/>
+  <text class="th" x="136" y="512" text-anchor="middle" fill="#3C3489">NLP &amp; Semantic</text>
+  <text class="th" x="136" y="528" text-anchor="middle" fill="#3C3489">Mapping</text>
+  <text class="ts" x="136" y="544" text-anchor="middle" fill="#534AB7">FR: AP processing</text>
+
+  <!-- LSTM Node -->
+  <rect x="260" y="494" width="160" height="58" rx="8" class="node-l3" stroke-width="0.5"/>
+  <text class="th" x="340" y="512" text-anchor="middle" fill="#3C3489">Hybrid LSTM</text>
+  <text class="th" x="340" y="528" text-anchor="middle" fill="#3C3489">Engine</text>
+  <text class="ts" x="340" y="544" text-anchor="middle" fill="#534AB7">FR: Cash flow</text>
+
+  <!-- ML Risk Classifier Node -->
+  <rect x="464" y="494" width="160" height="58" rx="8" class="node-l3" stroke-width="0.5"/>
+  <text class="th" x="544" y="512" text-anchor="middle" fill="#3C3489">ML Risk</text>
+  <text class="th" x="544" y="528" text-anchor="middle" fill="#3C3489">Classifier</text>
+  <text class="ts" x="544" y="544" text-anchor="middle" fill="#534AB7">FR: Procurement</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LAYER 2 — Integration Layer                            -->
+  <!-- y=598  h=132  bottom=730                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="38" y="598" width="604" height="132" rx="12" class="l2" stroke-width="0.5"/>
+  <text class="th" x="56" y="628" fill="#0C447C">Layer 2: Integration Layer (Middleware &amp; API Gateway)</text>
+
+  <!-- REST API Gateway -->
+  <rect x="56" y="644" width="160" height="58" rx="8" class="node-l2" stroke-width="0.5"/>
+  <text class="th" x="136" y="668" text-anchor="middle" fill="#0C447C">REST API Gateway</text>
+  <text class="ts" x="136" y="686" text-anchor="middle" fill="#185FA5">Inbound / outbound</text>
+
+  <!-- Event Bus backbone -->
+  <line x1="216" y1="673" x2="454" y2="673" stroke="#378ADD" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="272" cy="673" r="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <circle cx="335" cy="673" r="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <circle cx="398" cy="673" r="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <text class="ts" x="335" y="661" text-anchor="middle" fill="#0C447C">Event Bus</text>
+
+  <!-- QRS Filter -->
+  <rect x="464" y="644" width="160" height="58" rx="8" class="node-l2" stroke-width="0.5"/>
+  <text class="th" x="544" y="662" text-anchor="middle" fill="#0C447C">Predictive Quality</text>
+  <text class="th" x="544" y="678" text-anchor="middle" fill="#0C447C">Management</text>
+  <text class="ts" x="544" y="694" text-anchor="middle" fill="#185FA5">QRS Filter</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LAYER 1 — Data Layer (System of Record)                -->
+  <!-- y=748  h=148  bottom=896                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="38" y="748" width="604" height="148" rx="12" class="l1" stroke-width="0.5"/>
+  <text class="th" x="56" y="778" fill="#085041">Layer 1: Data Layer (System of Record)</text>
+
+  <!-- AP Ledger cylinder — cx=142 -->
+  <rect x="82"  y="802" width="120" height="62" fill="#E1F5EE" stroke="none"/>
+  <line x1="82"  y1="802" x2="82"  y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <line x1="202" y1="802" x2="202" y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="142" cy="864" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="142" cy="802" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="142" y="831" text-anchor="middle">Accounts Payable</text>
+  <text class="ts" x="142" y="847" text-anchor="middle">Ledger</text>
+
+  <!-- Cash Flow cylinder — cx=340 -->
+  <rect x="280" y="802" width="120" height="62" fill="#E1F5EE" stroke="none"/>
+  <line x1="280" y1="802" x2="280" y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <line x1="400" y1="802" x2="400" y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="340" cy="864" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="340" cy="802" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="340" y="831" text-anchor="middle">Cash Flow</text>
+  <text class="ts" x="340" y="847" text-anchor="middle">Master Data</text>
+
+  <!-- Procurement cylinder — cx=543 -->
+  <rect x="483" y="802" width="120" height="62" fill="#E1F5EE" stroke="none"/>
+  <line x1="483" y1="802" x2="483" y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <line x1="603" y1="802" x2="603" y2="864" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="543" cy="864" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <ellipse cx="543" cy="802" rx="60" ry="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="543" y="831" text-anchor="middle">Procurement</text>
+  <text class="ts" x="543" y="847" text-anchor="middle">Inventory</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- LEFT CHANNEL — Upward data extraction (teal)          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- L1 → L2 -->
+  <line x1="142" y1="746" x2="142" y2="732" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="746" x2="340" y2="732" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="543" y1="746" x2="543" y2="732" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text class="ts" x="22" y="739" text-anchor="start" fill="#0F6E56">data extract</text>
+
+  <!-- L2 → L3 -->
+  <line x1="142" y1="596" x2="142" y2="582" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="596" x2="340" y2="582" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="543" y1="596" x2="543" y2="582" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text class="ts" x="22" y="589" text-anchor="start" fill="#0F6E56">to AI nodes</text>
+
+  <!-- L3 → L4 -->
+  <line x1="142" y1="446" x2="142" y2="432" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="446" x2="340" y2="432" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="543" y1="446" x2="543" y2="432" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text class="ts" x="22" y="439" text-anchor="start" fill="#0F6E56">for validation</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- RIGHT CHANNEL — Governed write-back (coral, x=650)      -->
+  <!-- ════════════════════════════════════════════════════════ -->
+
+  <!-- Dashed bypass L4 → L2 (skips Layer 3) -->
+  <line x1="642" y1="430" x2="650" y2="430" stroke="#993C1D" stroke-width="1.5"/>
+  <line x1="650" y1="430" x2="650" y2="598" stroke="#993C1D" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <line x1="642" y1="598" x2="650" y2="598" stroke="#993C1D" stroke-width="1.5"/>
+  <text class="ts" x="658" y="507" text-anchor="start" fill="#993C1D">direct</text>
+  <text class="ts" x="658" y="521" text-anchor="start" fill="#993C1D">bypass</text>
+
+  <!-- Solid L2 → L1 write-back -->
+  <line x1="642" y1="730" x2="650" y2="730" stroke="#993C1D" stroke-width="1.5"/>
+  <line x1="650" y1="730" x2="650" y2="748" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="642" y1="748" x2="650" y2="748" stroke="#993C1D" stroke-width="1.5"/>
+  <text class="ts" x="658" y="739" text-anchor="start" fill="#993C1D">API write-back</text>
+
+</svg>
