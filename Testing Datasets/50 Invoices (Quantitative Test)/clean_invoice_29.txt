@@ -1,0 +1,6 @@
+INVOICE
+Vendor: Acme Corp
+Date: 2026-05-06
+
+Services Rendered.
+TOTAL DUE: $1676.1

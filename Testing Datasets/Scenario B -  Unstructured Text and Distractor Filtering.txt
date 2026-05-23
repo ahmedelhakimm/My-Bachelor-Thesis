@@ -1,0 +1,11 @@
+Hi Ahmed,
+
+I just got off the phone with our reps over at Apex Office Supplies. They are threatening to pause our account because we never processed their invoice from last week!
+
+The invoice was officially issued on 26/04/2026. Please get this into the Salesforce ledger ASAP.
+
+The subtotal for the desks was 800 EUR, plus 45.50 in taxes, making the final total amount exactly 845.50.
+(Note: You might see a 100 EUR freight fee mentioned in their email thread, but the manager explicitly waived that for us on the phone. Only log the final total).
+
+Thanks,
+Procurement

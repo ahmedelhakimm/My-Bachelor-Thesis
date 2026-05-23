@@ -1,0 +1,6 @@
+INVOICE
+Vendor: Global Freight
+Date: 2026-04-29
+
+Services Rendered.
+TOTAL DUE: $5874.96

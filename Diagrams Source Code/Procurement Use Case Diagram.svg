@@ -1,0 +1,158 @@
+<svg width="680" height="900" viewBox="0 0 680 900" xmlns="http://www.w3.org/2000/svg">
+  <title>Supply Chain RAG Chatbot Swimlane Dark Theme</title>
+  <defs>
+    <marker id="arr-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#9AA090" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green-dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5A8A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#8B3A2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5080A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="680" height="900" fill="#4A4E46"/>
+
+  <!-- Swimlane fills -->
+  <rect x="0"   y="0" width="230" height="900" fill="#52564E"/>
+  <rect x="230" y="0" width="260" height="900" fill="#4E524A"/>
+  <rect x="490" y="0" width="190" height="900" fill="#4A4E46"/>
+
+  <!-- Dividers -->
+  <line x1="230" y1="0"  x2="230" y2="900" stroke="#3A3E36" stroke-width="1.5"/>
+  <line x1="490" y1="0"  x2="490" y2="900" stroke="#3A3E36" stroke-width="1.5"/>
+  <line x1="0"   y1="68" x2="680" y2="68"  stroke="#3A3E36" stroke-width="1"/>
+
+  <!-- Headers -->
+  <text font-family="Georgia, serif" font-size="17" font-weight="bold"
+        x="115" y="34" text-anchor="middle" fill="#D8DDD0">Presentation</text>
+  <text font-family="Georgia, serif" font-size="13"
+        x="115" y="54" text-anchor="middle" fill="#9AA090">layer</text>
+
+  <text font-family="Georgia, serif" font-size="17" font-weight="bold"
+        x="360" y="34" text-anchor="middle" fill="#D8DDD0">Business logic</text>
+  <text font-family="Georgia, serif" font-size="13"
+        x="360" y="54" text-anchor="middle" fill="#9AA090">layer</text>
+
+  <text font-family="Georgia, serif" font-size="17" font-weight="bold"
+        x="585" y="34" text-anchor="middle" fill="#D8DDD0">Data</text>
+  <text font-family="Georgia, serif" font-size="13"
+        x="585" y="54" text-anchor="middle" fill="#9AA090">layer</text>
+
+  <!-- ── PRESENTATION LAYER ── -->
+
+  <!-- Supply Chain User stick figure — cx=115, head cy=104 -->
+  <circle cx="115" cy="104" r="20" fill="#B8C4D0" stroke="none"/>
+  <line x1="115" y1="124" x2="115" y2="166" stroke="#4060A0" stroke-width="2.2"/>
+  <line x1="115" y1="138" x2="90"  y2="156" stroke="#4060A0" stroke-width="2.2"/>
+  <line x1="115" y1="138" x2="140" y2="156" stroke="#4060A0" stroke-width="2.2"/>
+  <line x1="115" y1="166" x2="96"  y2="192" stroke="#4060A0" stroke-width="2.2"/>
+  <line x1="115" y1="166" x2="134" y2="192" stroke="#4060A0" stroke-width="2.2"/>
+  <text font-family="Georgia, serif" font-size="13"
+        x="115" y="212" text-anchor="middle" fill="#C0C8B8">Supply chain user</text>
+
+  <!-- "query / response" label box between user and chatbot -->
+  <rect x="116" y="224" width="108" height="22" rx="3" fill="#E8EDE0" stroke="#9AA090" stroke-width="0.8"/>
+  <text font-family="Georgia, serif" font-size="11"
+        x="170" y="238" text-anchor="middle" fill="#2A3A2A">query / response</text>
+
+  <!-- Bidirectional arrow on left side of label: x=116, from y=224 up toward user -->
+  <!-- Down arrow (query): left channel x=108 from user bottom y=212 → chatbot top y=258 -->
+  <line x1="108" y1="218" x2="108" y2="256" stroke="#5080A0" stroke-width="1.2" marker-end="url(#arr-blue)"/>
+  <!-- Up arrow (response): right channel x=116 from chatbot top y=256 → user y=218 -->
+  <line x1="116" y1="256" x2="116" y2="218" stroke="#5080A0" stroke-width="1.2" marker-end="url(#arr-blue)"/>
+
+  <!-- Chatbot UI chat-bubble: x=12 y=258 w=210 h=74 -->
+  <rect x="12" y="258" width="210" height="74" rx="14" fill="#C8DCF0" stroke="none"/>
+  <!-- Tail: small triangle at bottom-left -->
+  <polygon points="32,332 14,352 62,332" fill="#C8DCF0"/>
+  <!-- Typing dots -->
+  <circle cx="88"  cy="292" r="5" fill="#5080A0" opacity="0.7"/>
+  <circle cx="108" cy="292" r="5" fill="#5080A0" opacity="0.7"/>
+  <circle cx="128" cy="292" r="5" fill="#5080A0" opacity="0.7"/>
+  <text font-family="Georgia, serif" font-size="13" font-weight="bold"
+        x="117" y="318" text-anchor="middle" fill="#0A1A3A">Conversational chatbot UI</text>
+
+  <!-- ── BUSINESS LOGIC LAYER ── -->
+
+  <!-- RAG AI Orchestrator: x=242 y=256 w=236 h=76 -->
+  <rect x="242" y="256" width="236" height="76" rx="10" fill="#D8D0F0" stroke="none"/>
+  <text font-family="Georgia, serif" font-size="14" font-weight="bold"
+        x="360" y="280" text-anchor="middle" fill="#1A1A60">RAG AI orchestrator</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="360" y="298" text-anchor="middle" fill="#4A4A90">retrieval-augmented generation</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="360" y="314" text-anchor="middle" fill="#4A4A90">query routing</text>
+
+  <!-- Chatbot right → RAG left: elbow -->
+  <polyline points="222,295 236,295 236,294 242,294"
+            fill="none" stroke="#9AA090" stroke-width="1.2" marker-end="url(#arr-gray)"/>
+
+  <!-- ML Risk & SHAP Evaluator: x=242 y=450 w=236 h=76 -->
+  <rect x="242" y="450" width="236" height="76" rx="10" fill="#D8D0F0" stroke="none"/>
+  <text font-family="Georgia, serif" font-size="14" font-weight="bold"
+        x="360" y="474" text-anchor="middle" fill="#1A1A60">ML risk &amp; SHAP evaluator</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="360" y="492" text-anchor="middle" fill="#4A4A90">risk scoring · explainability</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="360" y="508" text-anchor="middle" fill="#4A4A90">variable importance</text>
+
+  <!-- RAG → SHAP purple arrow -->
+  <line x1="360" y1="332" x2="360" y2="450"
+        stroke="#5050A0" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+
+  <!-- ── DATA LAYER ── -->
+
+  <!-- Inventory Database cylinder: cx=585, top y=254 -->
+  <rect x="525" y="266" width="120" height="40" fill="#DCF0C0"/>
+  <ellipse cx="585" cy="266" rx="60" ry="14" fill="#ECF8D0" stroke="#6A9A5A" stroke-width="1"/>
+  <ellipse cx="585" cy="306" rx="60" ry="14" fill="#DCF0C0" stroke="#6A9A5A" stroke-width="1"/>
+  <text font-family="Georgia, serif" font-size="13" font-weight="bold"
+        x="585" y="281" text-anchor="middle" fill="#1A4A10">Inventory</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="585" y="297" text-anchor="middle" fill="#3A6A28">database</text>
+
+  <!-- Supplier History Database cylinder: cx=585, top y=436 -->
+  <rect x="525" y="448" width="120" height="40" fill="#DCF0C0"/>
+  <ellipse cx="585" cy="448" rx="60" ry="14" fill="#ECF8D0" stroke="#6A9A5A" stroke-width="1"/>
+  <ellipse cx="585" cy="488" rx="60" ry="14" fill="#DCF0C0" stroke="#6A9A5A" stroke-width="1"/>
+  <text font-family="Georgia, serif" font-size="13" font-weight="bold"
+        x="585" y="463" text-anchor="middle" fill="#1A4A10">Supplier history</text>
+  <text font-family="Georgia, serif" font-size="11"
+        x="585" y="479" text-anchor="middle" fill="#3A6A28">database</text>
+
+  <!-- RAG → Inventory: (478,278) → right to (524,278) -->
+  <line x1="478" y1="278" x2="524" y2="278"
+        stroke="#9AA090" stroke-width="1.2" marker-end="url(#arr-gray)"/>
+
+  <!-- RAG → Supplier: (478,294) → right channel x=506 → down to y=468 → right to (524,468) -->
+  <polyline points="478,294 506,294 506,468 524,468"
+            fill="none" stroke="#9AA090" stroke-width="1.2" marker-end="url(#arr-gray)"/>
+
+  <!-- Inventory → RAG return (dashed green): (524,288) → left channel x=498 → to (478,288) -->
+  <polyline points="524,288 498,288 498,306 478,306"
+            fill="none" stroke="#5A8A5A" stroke-width="1.2" stroke-dasharray="5,3"
+            marker-end="url(#arr-green-dash)"/>
+
+  <!-- Supplier → RAG return (dashed green): (524,478) → left x=492 → up to y=316 → left to (478,316) -->
+  <polyline points="524,478 492,478 492,316 478,316"
+            fill="none" stroke="#5A8A5A" stroke-width="1.2" stroke-dasharray="5,3"
+            marker-end="url(#arr-green-dash)"/>
+
+  <!-- ── FINAL ANSWER: SHAP bot (360,526) → down to y=620 → left to x=100 → up to chatbot bot (100,334) ── -->
+  <!-- "final answer" label box sitting on the horizontal rail -->
+  <polyline points="360,526 360,620 100,620 100,334"
+            fill="none" stroke="#8B3A2A" stroke-width="1.5" marker-end="url(#arr-red)"/>
+  <rect x="236" y="608" width="106" height="22" rx="3" fill="#E8E0D8" stroke="#8B3A2A" stroke-width="0.8"/>
+  <text font-family="Georgia, serif" font-size="11"
+        x="289" y="622" text-anchor="middle" fill="#5A1A0A">final answer</text>
+
+</svg>
